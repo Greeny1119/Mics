@@ -15,7 +15,7 @@ print(lineFollow.read("bivariate"))
 print(lineFollow.read("bivariate-str"))
 
 GPG.set_motor_power(GPG.MOTOR_LEFT + GPG.MOTOR_RIGHT, 100)
-  while lineFollow.read("bivariate") = [0,0,0,0,0,0] :
-    if lineFollow.read("bivariate") is not [0,0,0,0,0,0] :
-      GPG.set_motor_power(GPG.MOTOR_LEFT + GPG.MOTOR_RIGHT, 0)
+while lineFollow.read("bivariate") = [0,0,0,0,0,0] :
+  if 1 in lineFollow.read("bivariate") :
+    GPG.set_motor_power(GPG.MOTOR_LEFT + GPG.MOTOR_RIGHT, 0)
 GPG.set_motor_power(GPG.MOTOR_LEFT + GPG.MOTOR_RIGHT, 0)
